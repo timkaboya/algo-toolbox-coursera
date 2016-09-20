@@ -5,4 +5,4 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 
 Done with week 1. Hope to keep on with the remaining ones too.
 
-Ciao.
+Ciao!
