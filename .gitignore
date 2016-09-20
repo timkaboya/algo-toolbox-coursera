@@ -1,3 +1,9 @@
+/.idea
+.idea/workspace.xml
+/.idea/workspace.xml
+**/.idea/workspace.xml
+/out
+algo-toolbox-coursera.iml
 *.class
 
 # Mobile Tools for Java (J2ME)
