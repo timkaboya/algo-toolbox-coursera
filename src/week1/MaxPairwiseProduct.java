@@ -4,13 +4,13 @@ import java.util.*;
 import java.io.*;
 
 public class MaxPairwiseProduct {
-    static int getMaxPairwiseProduct(int[] numbers) {
-        int result = 0;
+    static long getMaxPairwiseProduct(int[] numbers) {
+        long result = 0;
         int n = numbers.length;
         for (int i = 0; i < n; ++i) {
             for (int j = i + 1; j < n; ++j) {
                 if (numbers[i] * numbers[j] > result) {
-                    result = numbers[i] * numbers[j];
+                    result = (long) numbers[i] * numbers[j];
                 }
             }
         }
