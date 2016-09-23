@@ -1,3 +1,4 @@
+package week1;
 
 import java.util.*;
 import java.io.*;
@@ -6,16 +7,12 @@ public class MaxPairwiseProduct {
     static long getMaxPairwiseProduct(int[] numbers) {
         long result = 0;
         int n = numbers.length;
-        int max = 0, max2 = 0;
         for (int i = 0; i < n; ++i) {
-            if (numbers[i] > max) {
-                max2 = max;
-                max = numbers[i];
+            for(int j = i+1; j < n; j++) {
+                if (result < ( (long) numbers[i] * numbers [j]))
+                    result = (long) numbers[i] * numbers[j];
             }
-            if ((numbers[i] > max2) && (numbers[i] < max))
-                max2 = numbers[i];
         }
-        result = (long) max * max2;
 
         return result;
     }
@@ -43,6 +40,34 @@ public class MaxPairwiseProduct {
     }
 
     public static void main(String[] args) {
+
+        Random rand = new Random();
+        /* Stress Testing to test our program */
+        /*
+        while (true) {
+            int len = rand.nextInt(1000) + 2;
+            System.out.println("Len: " + len);
+            int [] numbers = new int[len];
+            for (int i = 0; i < len; i++) {
+                numbers[i] = rand.nextInt(100000);
+            }
+            for (int i = 0; i < len; i++) {
+                System.out.print(numbers[i] + " ");
+            }
+            System.out.println();
+
+            long res1 = getMaxPairwiseProduct(numbers);
+            long res2 = getMaxPairwiseProductFast(numbers);
+
+            if (res1 != res2) {
+                System.out.println("Wrong Answer: " + res1 + " " + res2);
+                break;
+            } else
+                System.out.println("OK! ");
+
+        }
+        */
+
         FastScanner scanner = new FastScanner(System.in);
         int n = scanner.nextInt();
         int[] numbers = new int[n];
