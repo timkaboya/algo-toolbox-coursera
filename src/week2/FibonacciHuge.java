@@ -18,7 +18,17 @@ public class FibonacciHuge {
 
         return current % m;
     }
-    
+
+    private static long getFibonacciHuge(long n, long m) {
+        // Find length of Pisano period on fib numbers mod m (Its periodic)
+
+        // Calculate n mod pisano_len
+
+        // Result above mod m = answer
+
+        return 0;
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         long n = scanner.nextLong();

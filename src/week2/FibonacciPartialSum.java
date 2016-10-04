@@ -4,6 +4,7 @@ import java.util.*;
 
 public class FibonacciPartialSum {
     private static long getFibonacciPartialSumNaive(long from, long to) {
+
         if (to <= 1)
             return to;
 
