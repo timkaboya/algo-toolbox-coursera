@@ -14,4 +14,8 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 - Fibonacci Partial Sum
 - Greatest Common Divisor
 - Lowest Common Multiple
+
+*Week 3 - Greedy Algorithms*
+
+
 Ciao!!
