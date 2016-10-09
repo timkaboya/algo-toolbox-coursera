@@ -11,9 +11,10 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 *Week 2 - Introduction*
 - Fibonacci Sequence
 - Fibonacci Last Digit
-- Fibonacci Partial Sum
 - Greatest Common Divisor
 - Lowest Common Multiple
+- Sum of Fibonacci Numbers
+- Fibonacci Partial Sum
 
 *Week 3 - Greedy Algorithms*
 - Changing Money
@@ -23,6 +24,11 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 - Maximizing the Number of Prize Places in a competition
 - Advanced: Maximizing your Salary 
 
-
+*Week 4 - Divide and Conquer*
+- Binary Search
+- Majority Element
+- Sorting: 3-Way Partition
+- Advanced: Number of Inversions
+- Advanced: Points and Segments
 
 Ciao!!
