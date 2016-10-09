@@ -16,6 +16,13 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 - Lowest Common Multiple
 
 *Week 3 - Greedy Algorithms*
+- Changing Money
+- Maximixing the Value of a Loot
+- Maximizing Revenue in Online Ad Placement
+- Collecting Signatures
+- Maximizing the Number of Prize Places in a competition
+- Advanced: Maximizing your Salary 
+
 
 
 Ciao!!
