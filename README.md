@@ -31,4 +31,10 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 - Advanced: Number of Inversions
 - Advanced: Points and Segments
 
+*Week 5 - Dynamic Programming*
+- Edit Distance
+- Knapsack
+- Longest Common Subsequence of three Sequences
+- Placing Parentheses
+- Primitive Calculator
 Ciao!!
