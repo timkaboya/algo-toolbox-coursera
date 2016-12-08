@@ -12,10 +12,23 @@ import java.util.Scanner;
  *
  * Soln: Design a greedy algorithm for this one.
  */
+
+
+
+/*
+ * Divide by highest denomination and progressively go lower till one
+ */
 public class Change {
     private static int getChange(int m) {
-        //write your code here
-        return m;
+        int ten = 10, five = 5, one = 1;
+        int coins = 0;
+
+        coins = m/ten;
+        m = m%ten;
+        coins += m/five;
+        m = m%five;
+        coins += m/one;
+        return coins;
     }
 
     public static void main(String[] args) {
