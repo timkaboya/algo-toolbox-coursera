@@ -4,7 +4,7 @@ This is a collection of solutions to the programming assignments
 in the Coursera class. Part of Data Structures and Algorithms Specializations
 
 
-*Week 1 - Welcome*
+* Week 1 - Welcome *
 - Simple A Plus B Program
 - Max Pairwise Product
 
@@ -39,4 +39,4 @@ in the Coursera class. Part of Data Structures and Algorithms Specializations
 - Primitive Calculator
 
 
-Ciao!!
+Ciao!!!
