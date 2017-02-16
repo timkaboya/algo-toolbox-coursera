@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Change {
     private static int getChange(int m) {
         int ten = 10, five = 5, one = 1;
-        int coins = 0;
+        int coins;
 
         coins = m/ten;
         m = m%ten;
@@ -35,7 +35,6 @@ public class Change {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
         System.out.println(getChange(m));
-
     }
 }
 
