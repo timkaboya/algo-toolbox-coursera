@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 /**
+ * Problem 2: Maximizing Loot
  * Thief finds more loot than his bag can fit. Find most valuable combo of items
  * assuming any fraction of a loot item can be put in the bag.
  *

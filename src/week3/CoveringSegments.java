@@ -2,10 +2,16 @@ package week3;
 
 import java.util.*;
 
+/**
+ * Problem 4: Collecting Signatures (Covering Segments by points)
+ *
+ *
+ *
+  */
 public class CoveringSegments {
 
     private static int[] optimalPoints(Segment[] segments) {
-        //write your code here
+        //
         int[] points = new int[2 * segments.length];
         for (int i = 0; i < segments.length; i++) {
             points[2 * i] = segments[i].start;

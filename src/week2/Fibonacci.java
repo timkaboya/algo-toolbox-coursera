@@ -1,4 +1,4 @@
-// package week2;
+package week2;
 
 import java.util.Random;
 import java.util.Scanner;

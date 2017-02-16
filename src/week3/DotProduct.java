@@ -3,7 +3,7 @@ package week3;
 import java.util.*;
 
 /**
- * Maximizing revenue in ad placement.
+ * Problem 3: Maximizing revenue in ad placement.
  *
  * Given tw sequences
  * 1. profit per click on ad.
@@ -14,12 +14,15 @@ import java.util.*;
  */
 public class DotProduct {
     private static long maxDotProduct(int[] a, int[] b) {
-        //write your code here
+        //Bounds checking
+         if(a.length <= 0 || b.length <= 0)
+             return 0;
+
         Arrays.sort(a);
         Arrays.sort(b);
         long result = 0;
         for (int i = 0; i < a.length; i++) {
-            result += a[i] * b[i];
+            result += (long) a[i] * b[i];  // Casting one to long to handle large ints
         }
         return result;
     }
