@@ -2,9 +2,21 @@ package week3;
 
 import java.util.*;
 
+/**
+ * Maximizing revenue in ad placement.
+ *
+ * Given tw sequences
+ * 1. profit per click on ad.
+ * 2. Average number of clicks per ad
+ * Partition them into pairs such that the sum of the clicks is maximized.
+ *
+ * Safe to sort both as max to min and then multiply.
+ */
 public class DotProduct {
     private static long maxDotProduct(int[] a, int[] b) {
         //write your code here
+        Arrays.sort(a);
+        Arrays.sort(b);
         long result = 0;
         for (int i = 0; i < a.length; i++) {
             result += a[i] * b[i];
