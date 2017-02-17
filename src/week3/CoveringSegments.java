@@ -4,6 +4,9 @@ import java.util.*;
 
 /**
  * Problem 4: Collecting Signatures (Covering Segments by points)
+ * We know when each tenant is at home, Goal: Collect all signatures by visiting the building as few times
+ * as possible.
+ *
  *
  *
  *
@@ -28,6 +31,7 @@ public class CoveringSegments {
             this.end = end;
         }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
