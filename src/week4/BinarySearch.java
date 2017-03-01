@@ -3,11 +3,40 @@ package week4;
 import java.io.*;
 import java.util.*;
 
+
+/**
+ * ===== Implement the Binary Search Algorithm
+ * Input: first line has n, and a sequence of n +ve increasing integers.
+ *        2nd line has integer k and k positive integers
+ * Output: index of each element in line 2 after searching in line 1.
+ * If value non existent, return -1.
+ *
+ */
+
 public class BinarySearch {
 
-    static int binarySearch(int[] a, int x) {
-        int left = 0, right = a.length;
-        //write your code here
+
+    /**
+     * Method returns the index of x in the array.
+     * If not found, it returns -1.
+     * @param a
+     * @param x
+     * @return
+     */
+    static int binarySearch(int[] a, int left, int right, int x) {
+        int mid;
+        // Bounds checking
+        if((left >= right) && (a[left] != x))
+            return -1;
+
+        mid = left + (right - left) / 2;
+
+        if( x == a[mid])
+            return mid;
+        else if (x < a[mid])
+            return binarySearch(a, left, mid - 1, x);
+        else if (x > a[mid])
+            return binarySearch(a, mid + 1, right, x);
 
         return -1;
     }
@@ -33,9 +62,11 @@ public class BinarySearch {
         }
         for (int i = 0; i < m; i++) {
             //replace with the call to binarySearch when implemented
-            System.out.print(linearSearch(a, b[i]) + " ");
+            // System.out.print(linearSearch(a, b[i]) + " ");
+            System.out.print(binarySearch(a, 0, a.length - 1, b[i]) + " ");
         }
     }
+
     static class FastScanner {
         BufferedReader br;
         StringTokenizer st;
