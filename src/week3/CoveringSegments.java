@@ -2,10 +2,19 @@ package week3;
 
 import java.util.*;
 
+/**
+ * Problem 4: Collecting Signatures (Covering Segments by points)
+ * We know when each tenant is at home, Goal: Collect all signatures by visiting the building as few times
+ * as possible.
+ *
+ *
+ *
+ *
+  */
 public class CoveringSegments {
 
     private static int[] optimalPoints(Segment[] segments) {
-        //write your code here
+        //
         int[] points = new int[2 * segments.length];
         for (int i = 0; i < segments.length; i++) {
             points[2 * i] = segments[i].start;
@@ -22,6 +31,7 @@ public class CoveringSegments {
             this.end = end;
         }
     }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();

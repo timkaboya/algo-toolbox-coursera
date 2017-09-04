@@ -3,15 +3,35 @@ package week4;
 import java.util.*;
 import java.io.*;
 
+/**
+ * Goal is to check whether input array has a majority sequence
+ */
 public class MajorityElement {
+
+
+    /**
+     * Should recursively call itself to get if element is majority one.
+     * Done using hashmap.
+     *
+     * There is more complicated way of using a divide and conquer hashmap. :)
+     * @param a
+     * @param left
+     * @param right
+     * @return
+     */
     private static int getMajorityElement(int[] a, int left, int right) {
-        if (left == right) {
-            return -1;
+        Map<Integer, Integer> arrMap = new HashMap<Integer, Integer>();
+        
+        for(int i = left; i < right; i++) {
+            if(arrMap.containsKey(a[i]))
+                arrMap.put(a[i], arrMap.get(a[i])+1);
+            arrMap.putIfAbsent(a[i], 1);
         }
-        if (left + 1 == right) {
-            return a[left];
+
+        for (Integer value : arrMap.values()) {
+            if(value > a.length/2)
+                return 1;
         }
-        //write your code here
         return -1;
     }
 

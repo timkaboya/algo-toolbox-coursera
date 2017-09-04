@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 
 /*
- * Problem: Changing Money!
+ * Problem 1: Changing Money!
  * Explanation: Find the minimum number of coins needed to change the input value (an int)
  * into coins with denominations of 1, 5, and 10
  * Input: Single integer m
@@ -21,7 +21,7 @@ import java.util.Scanner;
 public class Change {
     private static int getChange(int m) {
         int ten = 10, five = 5, one = 1;
-        int coins = 0;
+        int coins;
 
         coins = m/ten;
         m = m%ten;
@@ -35,7 +35,6 @@ public class Change {
         Scanner scanner = new Scanner(System.in);
         int m = scanner.nextInt();
         System.out.println(getChange(m));
-
     }
 }
 

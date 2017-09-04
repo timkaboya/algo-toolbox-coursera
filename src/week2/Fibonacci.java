@@ -1,4 +1,4 @@
-// package week2;
+package week2;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -25,9 +25,9 @@ public class Fibonacci {
     }
 
     public static void main(String args[]) {
-        Random rand = new Random();
         int n;
         /* Stress Testing
+        Random rand = new Random();
         long res1, res2;
         while(true) {
             n = rand.nextInt(45);

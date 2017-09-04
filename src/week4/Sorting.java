@@ -3,6 +3,11 @@ package week4;
 import java.io.*;
 import java.util.*;
 
+/**
+ * GOAL: redesign given qSort to work fast on sequences with many equal elements.
+ * Task: Replace 2 way partition with 3 way partition
+ * Output: Sequence sorted in non-decreasing order.
+ */
 public class Sorting {
     private static Random random = new Random();
 
