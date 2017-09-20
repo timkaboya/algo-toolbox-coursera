@@ -21,8 +21,6 @@ public class FractionalKnapsack {
         if(values.length == 0 || weights.length == 0 || capacity <= 0)
             return 0;
 
-        //write your code here
-
         // Sort all arrays based on weighted values.
         Double [][] valsAndWeights = new Double[len][3];  // 2D array for all vals.
 

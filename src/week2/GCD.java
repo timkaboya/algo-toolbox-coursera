@@ -45,6 +45,6 @@ public class GCD {
         a = scanner.nextInt();
         b = scanner.nextInt();
 
-        System.out.println(gcd_euclidean(a, b));
+        System.out.println(gcd_naive(a, b));
     }
 }
